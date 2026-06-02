@@ -1,0 +1,6 @@
+{
+  "epoch": 30,
+  "best_binary_auc": 0.9456645333333333,
+  "best_threshold": 0.9500000000000002,
+  "best_multiclass_auc": 0.9843643555555555
+}
