@@ -18,22 +18,6 @@ The final implementation goes beyond a simple binary classifier. It uses multi-c
 
 ---
 
-## Business Case
-
-Deepfake misuse is growing quickly across social media, journalism, fraud detection, and identity verification. Manual inspection alone is no longer reliable enough, especially when manipulated content is shared in compressed formats on mobile and social platforms.
-
-This project demonstrates a working approach that can be used as a prototype for:
-
-- content moderation
-- fact-checking
-- identity verification
-- digital forensics
-- media authenticity analysis
-
-From a product perspective, the system is designed to be deployable. The backend can run locally or on a cloud machine, and the frontend provides a simple browser-based interface for uploading videos and viewing results.
-
----
-
 ## Motivation
 
 This project was built with two goals in mind.
@@ -70,21 +54,6 @@ The original idea was extended into a practical system by using:
 </p>
 
 The figure above summarizes the training and inference flow. During training, a raw face image and a compressed version of the same face are processed together so the model learns compression-invariant features. During inference, the backend samples frames from the uploaded video, extracts faces, predicts frame-level labels, and aggregates them into a final decision.
-
----
-
-## Key Features
-
-- Video upload through a web interface
-- Frame extraction from uploaded videos
-- Face detection and cropping using MTCNN
-- Compression-aware TCNSC training
-- Multi-class manipulation classification
-- Binary real/fake inference for the UI
-- Fake-type identification for manipulated videos
-- Confidence scores and probability breakdowns
-- FastAPI backend with reusable inference modules
-- Next.js frontend with a modern dashboard-style UI
 
 ---
 
@@ -179,36 +148,6 @@ The application also includes a clean basic and advanced analysis views.
 
 ---
 
-
-## Technology Stack
-
-### Machine Learning
-- Python
-- PyTorch
-- torchvision
-- timm
-- scikit-learn
-- NumPy
-
-### Computer Vision
-- OpenCV
-- PIL
-- MTCNN / facenet-pytorch
-
-### Backend
-- FastAPI
-- Uvicorn
-
-### Frontend
-- Next.js
-- React
-- Tailwind CSS
-
-### Training Environment
-- Kaggle Notebook
-- NVIDIA T4 GPU
-
----
 ## System Workflow
 
 ### Training pipeline
@@ -358,6 +297,38 @@ http://localhost:3000
    - Real
    - Fake
    - Fake type if applicable
+
+---
+
+
+
+## Technology Stack
+
+### Machine Learning
+- Python
+- PyTorch
+- torchvision
+- timm
+- scikit-learn
+- NumPy
+
+### Computer Vision
+- OpenCV
+- PIL
+- MTCNN / facenet-pytorch
+
+### Backend
+- FastAPI
+- Uvicorn
+
+### Frontend
+- Next.js
+- React
+- Tailwind CSS
+
+### Training Environment
+- Kaggle Notebook
+- NVIDIA T4 GPU
 
 ---
 
