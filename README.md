@@ -197,11 +197,7 @@ The final Xception-based model performed best among the tested backbones.
 
 ## User Interface
 
-The application includes a clean landing page, a video upload interface, and both basic and advanced analysis views.
-
-<p align="center">
-  <img src="screenshots/2.UploadPage.png" width="100%" alt="Video Upload Page">
-</p>
+The application also includes a clean basic and advanced analysis views.
 
 <p align="center">
   <img src="screenshots/3.BasicAnalysis.png" width="100%" alt="Basic Prediction Result">
