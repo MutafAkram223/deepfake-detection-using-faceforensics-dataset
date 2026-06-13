@@ -88,36 +88,6 @@ The figure above summarizes the training and inference flow. During training, a 
 
 ---
 
-## Technology Stack
-
-### Machine Learning
-- Python
-- PyTorch
-- torchvision
-- timm
-- scikit-learn
-- NumPy
-
-### Computer Vision
-- OpenCV
-- PIL
-- MTCNN / facenet-pytorch
-
-### Backend
-- FastAPI
-- Uvicorn
-
-### Frontend
-- Next.js
-- React
-- Tailwind CSS
-
-### Training Environment
-- Kaggle Notebook
-- NVIDIA T4 GPU
-
----
-
 ## Dataset
 
 The project uses a custom FaceForensics++ derived dataset prepared specifically for this system:
@@ -209,6 +179,36 @@ The application also includes a clean basic and advanced analysis views.
 
 ---
 
+
+## Technology Stack
+
+### Machine Learning
+- Python
+- PyTorch
+- torchvision
+- timm
+- scikit-learn
+- NumPy
+
+### Computer Vision
+- OpenCV
+- PIL
+- MTCNN / facenet-pytorch
+
+### Backend
+- FastAPI
+- Uvicorn
+
+### Frontend
+- Next.js
+- React
+- Tailwind CSS
+
+### Training Environment
+- Kaggle Notebook
+- NVIDIA T4 GPU
+
+---
 ## System Workflow
 
 ### Training pipeline
